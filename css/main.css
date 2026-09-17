@@ -25,3 +25,18 @@
   align-items: center;
   text-align: center;
 }
+.header-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-box-list{
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+.header-icns{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
