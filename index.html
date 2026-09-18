@@ -11,14 +11,19 @@
 
 <body>
     <header class="header">
-        <h1 class="visually-hidden">Sahifamiz-haqida</h1>
+        <h1 class="visually-hidden">Sahifamiz haqida</h1>
         <div class="container">
-            <div class="header-container">
-                <div class="header-box">
-                    <a href="#">
-                        <h1 class="header-logo-title">Sunny</h1>
-                    </a>
+            <div class="header-box">
+                <!-- Logo -->
+                <a href="#" class="header-logo">
+                    <h1 class="header-logo-title">Sunny</h1>
+                </a>
 
+                <!-- Checkbox Mobile Menu Toggle uchun -->
+                <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+
+                <!-- Navigatsiya Menyusi -->
+                <nav class="header-nav">
                     <ul class="header-box-list">
                         <li class="header-box-item"><a class="header-box-item-link" href="#">Home</a></li>
                         <li class="header-box-item"><a class="header-box-item-link" href="#">About us</a></li>
@@ -26,25 +31,36 @@
                         <li class="header-box-item"><a class="header-box-item-link" href="#">Faqs</a></li>
                         <li class="header-box-item"><a class="header-box-item-link" href="#">Contact us</a></li>
                     </ul>
+                </nav>
 
-                    <div class="header-icns">
-                        <img class="header-icns-img" src="./images/icn1.svg" alt="qidiruv-icn">
-                        <img class="header-icns-img" src="./images/icn2.png" alt="bag">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- On-screen Ikonkalar -->
+                <div class="header-icns">
+                    <a href="#" class="icon-link" aria-label="Search">
+                        <img class="header-icns-img" src="./images/icn1.svg" alt="Search">
+                    </a>
+                    <a href="#" class="icon-link" aria-label="Cart">
+                        <img class="header-icns-img" src="./images/icn2.png" alt="Bag">
+                    </a>
+                    <a href="#" class="icon-link" aria-label="Profile">
+                        <svg class="header-icns-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
-                                stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
                             <path d="M20.59 22C20.59 18.13 16.74 15 12 15C7.26003 15 3.41003 18.13 3.41003 22"
-                                stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
-                    </div>
-                    <div class="bars">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
+                    </a>
                 </div>
 
+                <!-- Mobile Burger Icon -->
+                <label for="burger-toggle" class="bars" aria-label="Menu Toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
             </div>
         </div>
     </header>
