@@ -1,71 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Bayon&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nabla&family=Niconne&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Bayon&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nabla&family=Niconne&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-*{
-  margin: 0 auto;
-  padding: 0;
-  align-items: center;
-  text-align: center;
-  list-style: none;
-  text-decoration: none;
-}
-.container{
-  max-width: 1200px;
-  align-items: center;
-  text-align: center;
-}
-.header{
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgb(239, 238, 236);
-  box-shadow: 2px 8px 8px rgb(237, 237, 242);
-}
-.header-box{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header-box-list{
-  display: flex;
-  align-items: center;
-  gap: 33px;
-}
-.header-icns{
-  display: flex;
-  align-items: center;
-  gap: 22px;
-}
-.header-logo-title{
-  font-family: "Abhaya Libre";
-font-weight: 700;
-font-style: Bold;
-font-size: 20px;
-line-height: 100%;
-letter-spacing: 0%;
-  color: #000000;
-}
-.header-box-item-link{
-  font-family: "Poppins";
-font-weight: 500;
-font-style: Medium;
-font-size: 16px;
-line-height: 100%;
-color: #000000;
-letter-spacing: 0%;
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Poppins:wght@400;500;600&display=swap');
 
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 80px; /* Header balandligi uchun joy */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Layout Container */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Base Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    padding: 16px 0;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.header-logo-title {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #1a1a1a;
+    transition: color 0.3s ease;
+}
+
+.header-logo:hover .header-logo-title {
+    color: #e67e22; /* Primary Accent color */
+}
+
+/* Navigation Menu */
+.header-box-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header-box-item-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #2c3e50;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect: Animated Underline */
+.header-box-item-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e67e22;
+    transition: width 0.3s ease;
+}
+
+.header-box-item-link:hover {
+    color: #e67e22;
+}
+
+.header-box-item-link:hover::after {
+    width: 100%;
+}
+
+/* Header Icons */
+.header-icns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #292D32;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-link:hover {
+    transform: translateY(-2px);
+    color: #e67e22;
+}
+
+.header-icns-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.header-icns-svg {
+    transition: stroke 0.3s ease;
+}
+
+.icon-link:hover .header-icns-svg path {
+    stroke: #e67e22;
+}
+
+/* Burger Toggle Logic */
+.burger-checkbox {
+    display: none;
+}
+
+.bars {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #2c3e50;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Responsiveness (Screen < 768px) */
+@media screen and (max-width: 768px) {
+    .bars {
+        display: flex;
+    }
+
+    .header-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #ffffff;
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.4s ease;
+    }
+
+    .header-box-list {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .header-box-item-link {
+        font-size: 18px;
+    }
+
+    /* Burger Menu Animations when Toggled */
+    .burger-checkbox:checked ~ .header-nav {
+        right: 0;
+    }
+
+    .burger-checkbox:checked ~ .bars .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger-checkbox:checked ~ .bars .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-checkbox:checked ~ .bars .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
