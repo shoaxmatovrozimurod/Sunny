@@ -1100,6 +1100,7 @@ letter-spacing: 0%;
 
 .footer-social-link:hover {
     background-color: #e74c3c;
+    color: white;
     transform: translateY(-2px);
 }
 
