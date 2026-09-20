@@ -16,14 +16,11 @@
             <div class="header-box">
                 <!-- Logo -->
                 <a href="#" class="header-logo">
-                    <h1 class="header-logo-title">Sunny</h1>
+                    <h2 class="header-logo-title">Sunny</h2>
                 </a>
 
-                <!-- Checkbox Mobile Menu Toggle uchun -->
-                <input type="checkbox" id="burger-toggle" class="burger-checkbox">
-
                 <!-- Navigatsiya Menyusi -->
-                <nav class="header-nav">
+                <nav class="header-nav" id="headerNav">
                     <ul class="header-box-list">
                         <li class="header-box-item"><a class="header-box-item-link" href="#">Home</a></li>
                         <li class="header-box-item"><a class="header-box-item-link" href="#">About us</a></li>
@@ -54,14 +51,42 @@
                         </svg>
                     </a>
                 </div>
-                <label for="burger-toggle" class="bars" aria-label="Menu Toggle">
+
+                <!-- Mobile Burger Button -->
+                <button class="bars" id="burgerBtn" aria-label="Toggle Menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </label>
+                </button>
             </div>
         </div>
     </header>
+    <!-- ---------------------hero------------------- -->
+    <div class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-box">
+                    <span class="hero-box-sn">Free delivery worldwide</span>
+                    <h2 class="hero-box-title">Foundation Matte & Poreless</h2>
+                    <p class="hero-box-text">Maybellin’s #1 foundation perfect for oily skin.no stickiness,no shine.</p>
+                    <div class="hero-button">
+                        <button class="hero-button-btn">Add to cart</button>
+                        <span class="hero-button-sn"><img src="./images/vid.png" width="60" height="60" alt="vidyoni ko'rish tugmasi"> How it work</span>
+                    </div>
+                </div>
+
+                <div class="hero-wrapper">
+                    <img src="./images/maz.png" width="270px" height="255px" alt="Mockup design">
+                    <div class="hero-wrapper-inner">
+                        <p class="hero-inner-title">Details</p>
+                        <h3 class="hero-inner-text">$100.45</h3>
+                        <p class="hero-inner-title">30 ml</p>
+                        <img src="./images/baholash.png" alt="yulduscha orqali baxolash">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
