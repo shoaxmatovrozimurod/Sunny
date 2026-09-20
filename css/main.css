@@ -609,3 +609,127 @@ letter-spacing: 0%;
         max-width: 100%;
     }
 }
+/* ---------------------results--------------- */
+/* Results Section */
+.results {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Brend logotiplari qismi */
+.results-logos {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+/* Asosiy card bloki (Rasm va matn yonma-yon) */
+.results-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 950px;
+    width: 100%;
+    background-color: #fafafa;
+    border-radius: 24px;
+    padding: 40px;
+}
+
+/* Qizaloq/Mijoz rasmi orqasidagi yumshoq fon qismi */
+.results-box > img {
+    width: 280px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #f0f0f0; /* Figma dizaynidagi kulrang card foni */
+    flex-shrink: 0;
+}
+
+/* Matnlar qismi */
+.results-box-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.results-box-inner-sn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #e74c3c; /* Qizg'ish "Customer story" yozuvi */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.results-box-title {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #1a1a1a;
+}
+
+.results-box-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.results-box-inner img {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 850px) {
+    .results-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .results-box > img {
+        width: 100%;
+        max-width: 320px;
+        height: 280px;
+    }
+
+    .results-box-inner {
+        align-items: center;
+    }
+
+    .results-box-title {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .results {
+        padding: 50px 0;
+    }
+
+    .results-logos {
+        width: 100%;
+    }
+
+    .results-box-title {
+        font-size: 22px;
+    }
+
+    .results-box-text {
+        font-size: 14px;
+    }
+}
